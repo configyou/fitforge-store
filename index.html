@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitForge — Premium Fitness & Wellness Gear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">💪</span>
+        FitForge
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="trends.html">Trends</a></li>
+        <li><a href="#" id="botInfoLink">Bot</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" onclick="window.location.href='cart.html'">
+          🛒
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">☰</button>
+      </div>
+    </div>
+  </nav>
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badges">
+          <span class="badge"><span class="icon">🔥</span> Trending Now</span>
+          <span class="badge"><span class="icon">🚀</span> Free Shipping</span>
+          <span class="badge"><span class="icon">💎</span> Premium Quality</span>
+        </div>
+        <h1>Forge Your <span class="highlight">Strongest</span> Self</h1>
+        <p>Premium fitness gear, wellness essentials, and science-backed programs — curated for the latest health trends. Train smarter, recover faster, level up.</p>
+        <div class="hero-cta">
+          <a href="shop.html" class="btn btn-primary">Shop Now →</a>
+          <a href="trends.html" class="btn btn-secondary">Explore Trends</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-placeholder">
+          <div class="emoji-grid">
+            <span>🏋️</span><span>🧘</span><span>🏃</span>
+            <span>💪</span><span>🥗</span><span>🧠</span>
+            <span>🔥</span><span>💧</span><span>⚡</span>
+          </div>
+          <span class="placeholder-text">Your fitness journey starts here</span>
+        </div>
+        <div class="floating-card">
+          <span class="fc-icon">🏆</span>
+          <span>2,500+ products sold</span>
+        </div>
+        <div class="floating-card">
+          <span class="fc-icon">⭐</span>
+          <span>4.9 average rating</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="bot-status-bar">
+        <div class="bot-status-left">
+          <span class="bot-status-dot" id="botStatusDot"></span>
+          <div>
+            <strong>🤖 Telegram Bot</strong>
+            <span style="color: var(--text-secondary); font-size: 0.85rem; margin-left: 8px;" id="botStatusText">Connected — managing orders</span>
+          </div>
+        </div>
+        <a href="#" class="btn btn-sm btn-primary" id="botTestBtn" onclick="testBot()">Test Bot</a>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Categories</span>
+        <h2>Shop by Trend</h2>
+        <p>From high-intensity gear to recovery essentials — everything you need to stay on top of the latest fitness trends.</p>
+      </div>
+      <div class="categories-grid" id="categoriesGrid">
+      </div>
+    </div>
+  </section>
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Best Sellers</span>
+        <h2>Trending Now</h2>
+        <p>Top-rated products powering this season's biggest health & fitness movements.</p>
+      </div>
+      <div class="product-grid" id="featuredProducts">
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why FitForge</span>
+        <h2>Built for the Modern Athlete</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feat-icon">🚀</div>
+          <h3>Free Shipping</h3>
+          <p>On all orders over $50. Fast delivery anywhere in the US.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">🛡️</div>
+          <h3>Premium Quality</h3>
+          <p>Every product is tested for durability, safety, and performance.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">🤖</div>
+          <h3>Bot-Managed</h3>
+          <p>Orders managed via Telegram bot — real-time updates, zero hassle.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">♻️</div>
+          <h3>Sustainable</h3>
+          <p>Eco-friendly packaging and carbon-neutral shipping on every order.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="trends">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Health & Fitness Trends</span>
+        <h2>What's Hot Right Now</h2>
+        <p>Stay ahead of the curve with the latest movements in fitness, wellness, and nutrition.</p>
+      </div>
+      <div class="trends-grid" id="trendsGrid">
+      </div>
+      <div style="text-align: center; margin-top: 32px;">
+        <a href="trends.html" class="btn btn-secondary">View All Trends →</a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>💪 FitForge</h3>
+          <p>Premium fitness & wellness gear for the modern athlete. Curated trends, bot-managed convenience.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="shop.html?filter=gear">Gear</a></li>
+            <li><a href="shop.html?filter=supplements">Supplements</a></li>
+            <li><a href="shop.html?filter=digital">Digital Programs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="trends.html">Trends</a></li>
+            <li><a href="#" id="footerBotLink">Bot Setup</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://t.me/your_bot" target="_blank" id="telegramLink">Telegram</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 FitForge. All rights reserved.</span>
+        <span>Powered by 🤖 Bot Management</span>
+      </div>
+    </div>
+  </footer>
+  <div class="toast-container" id="toastContainer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
