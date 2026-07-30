@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trends — FitForge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><span class="logo-icon">💪</span>FitForge</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="trends.html" class="active">Trends</a></li>
+        <li><a href="#" id="botInfoLink">Bot</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" onclick="window.location.href='cart.html'">🛒<span class="cart-count" id="cartCount">0</span></button>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+      </div>
+    </div>
+  </nav>
+  <div class="trends-page">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Trending Now</span>
+        <h1>Health & Fitness Trends</h1>
+        <p>Stay ahead of the curve with the latest movements in fitness, wellness, and nutrition — curated for 2026.</p>
+      </div>
+      <div class="trends-grid" id="allTrends">
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><h3>💪 FitForge</h3><p>Premium fitness & wellness gear for the modern athlete.</p></div>
+        <div class="footer-col"><h4>Shop</h4><ul><li><a href="shop.html">All Products</a></li><li><a href="shop.html?filter=gear">Gear</a></li><li><a href="shop.html?filter=supplements">Supplements</a></li><li><a href="shop.html?filter=digital">Digital Programs</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="trends.html">Trends</a></li><li><a href="#" id="footerBotLink">Bot Setup</a></li><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li></ul></div>
+        <div class="footer-col"><h4>Connect</h4><ul><li><a href="https://t.me/your_bot" target="_blank">Telegram</a></li><li><a href="#">Instagram</a></li><li><a href="#">TikTok</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 FitForge. All rights reserved.</span><span>Powered by 🤖 Bot Management</span></div>
+    </div>
+  </footer>
+  <div class="toast-container" id="toastContainer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
